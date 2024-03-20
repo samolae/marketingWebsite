@@ -1,5 +1,6 @@
 body {
   font-family: $montserrat;
+  overflow: hidden; //   for  decoration 
 }
 .button {
   @include button;
@@ -110,4 +111,31 @@ h1 {
       font-size: 24px;
     }
   }
+  .arrow:hover {
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+}
+.first-section::after {
+    content: " ";
+    display: block;
+    width: 107px;
+    height: 107px;
+    border-radius: 10px;
+    border: solid 11px $dark;
+    background: #ffffff00;
+    position: absolute;
+    top: 31px;
+    right: -42px;
+}
+.first-section::before {
+    content: " ";
+    display: block;
+    width: 163px;
+    height: 163px;
+    border-radius: 10px;
+    border: solid 11px $dark;
+    background: #ffffff00;
+    position: absolute;
+    bottom: -82px;
+    left: -82px;
 }
