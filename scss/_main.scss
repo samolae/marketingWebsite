@@ -1,0 +1,102 @@
+body {
+  font-family: $montserrat;
+}
+.button {
+  @include button;
+}
+.button:hover {
+  background-color: $dark;
+  transition: 0.6s linear;
+}
+h1 {
+  font-size: $h1;
+  color: $dark;
+  font-weight: 700;
+  line-height: 64px;
+}
+.active {
+    color: $yellow;
+    font-weight: 700;
+    padding-bottom: 4px;
+}
+.active::after {
+    content: ' ';
+    display: block;
+    width: 24px;
+    height: 1px;
+    border-radius: 20px;
+    background: #333333;
+    position: relative;
+    top: 6px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+// header
+.header {
+  background-color: $gray;
+  padding: 0 80px;
+  @include d-flex(flex, space-between, center);
+
+  .logo {
+    height: 100px;
+    width: 393px;
+    border-radius: 0 0 20px 20px;
+    background-color: $white;
+    @include d-flex(flex, center, center);
+    cursor: pointer;
+    font-size: $h2;
+    font-weight: 900;
+    color: $yellow;
+  }
+  nav {
+    display: flex;
+    gap: 40px;
+    .nav-item {
+      font-size: $h5;
+      color: #333333;
+    }
+    ul {
+      @include d-flex(flex, space-between, center);
+      gap: 40px;
+      a {
+        cursor: pointer;
+      }
+    }
+    
+  }
+}
+
+// first-section
+.first-section {
+  background-color: $gray;
+  background-image: url("/img/luka.png");
+  background-repeat: no-repeat;
+  background-size: 40%;
+  background-position-y: bottom;
+  background-position-x: 85%;
+  padding: 0 139px 0 96px;
+  @include d-flex(flex, space-between, center);
+  height: 632px;
+  div {
+    width: 600px;
+    .subtitle {
+        margin-top: 20px;
+      font-size: 42px;
+      font-weight: 400;
+      line-height: 55px;
+      span {
+        color: $yellow;
+        font-weight: 700;
+      }
+    }
+    .button {
+        margin-top: 40px;
+      }
+  }
+  img {
+    max-width: 553px;
+    width: 100%;
+  }
+}
