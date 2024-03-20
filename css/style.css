@@ -137,16 +137,12 @@ h1 {
 
 .first-section {
   background-color: #E5E5E5;
-  background-image: url("/img/luka.png");
-  background-repeat: no-repeat;
-  background-size: 40%;
-  background-position-y: bottom;
-  background-position-x: 85%;
   padding: 0 139px 0 96px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 632px;
+  position: relative;
 }
 .first-section div {
   width: 600px;
@@ -165,8 +161,27 @@ h1 {
   margin-top: 40px;
 }
 .first-section img {
-  max-width: 553px;
+  max-width: 591px;
   width: 100%;
+  margin-top: 18px;
+}
+.first-section .arrow {
+  background-color: #FFFFFF;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.first-section .arrow ion-icon {
+  color: #FCA311;
+  font-size: 24px;
 }
 
 /*# sourceMappingURL=style.css.map */

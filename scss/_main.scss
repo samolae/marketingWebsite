@@ -15,23 +15,22 @@ h1 {
   line-height: 64px;
 }
 .active {
-    color: $yellow;
-    font-weight: 700;
-    padding-bottom: 4px;
+  color: $yellow;
+  font-weight: 700;
+  padding-bottom: 4px;
 }
 .active::after {
-    content: ' ';
-    display: block;
-    width: 24px;
-    height: 1px;
-    border-radius: 20px;
-    background: #333333;
-    position: relative;
-    top: 6px;
+  content: " ";
+  display: block;
+  width: 24px;
+  height: 1px;
+  border-radius: 20px;
+  background: #333333;
+  position: relative;
+  top: 6px;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
 
 // header
 .header {
@@ -64,25 +63,20 @@ h1 {
         cursor: pointer;
       }
     }
-    
   }
 }
 
 // first-section
 .first-section {
   background-color: $gray;
-  background-image: url("../img/luka.png");
-  background-repeat: no-repeat;
-  background-size: 40%;
-  background-position-y: bottom;
-  background-position-x: 85%;
   padding: 0 139px 0 96px;
   @include d-flex(flex, space-between, center);
   height: 632px;
+  position: relative;
   div {
     width: 600px;
     .subtitle {
-        margin-top: 20px;
+      margin-top: 20px;
       font-size: 42px;
       font-weight: 400;
       line-height: 55px;
@@ -92,11 +86,28 @@ h1 {
       }
     }
     .button {
-        margin-top: 40px;
-      }
+      margin-top: 40px;
+    }
   }
   img {
-    max-width: 553px;
+    max-width: 591px;
     width: 100%;
+    margin-top: 18px;
+  }
+  .arrow {
+    background-color: $white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    @include d-flex(flex, center, center);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    ion-icon {
+      color: $yellow;
+      font-size: 24px;
+    }
   }
 }
