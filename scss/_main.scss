@@ -371,6 +371,7 @@ footer {
   width: 100%;
   @include d-flex(flex, space-between, center);
   flex-direction: column;
+  border-top: 1px solid #F0F0F0;
   .footer-div {
     margin: 77px 0 59px;
     max-width: 1314px;

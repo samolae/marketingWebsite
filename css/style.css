@@ -533,6 +533,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
+  border-top: 1px solid #F0F0F0;
 }
 footer .footer-div {
   margin: 77px 0 59px;
@@ -637,6 +638,63 @@ footer .copy p {
   font-size: 12px;
   color: #FFFFFF;
   font-weight: 500;
+}
+
+.recent-case {
+  background-image: url("../img/case/round.png");
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  padding: 93px 0 91px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.recent-case .max-width {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.recent-case .max-width .case-cards {
+  margin: 90px 0 118px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 70px;
+  max-width: 1070px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.recent-case .max-width .case-cards .case-card {
+  max-width: 310px;
+  width: 100%;
+  border-radius: 30px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.recent-case .max-width .case-cards .case-card img {
+  width: 100%;
+}
+.recent-case .max-width .case-cards .case-card .texts {
+  color: #FFFFFF;
+  position: absolute;
+  bottom: 24px;
+  left: 16px;
+}
+.recent-case .max-width .case-cards .case-card .texts h4 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 30px;
+}
+.recent-case .max-width .case-cards .case-card .texts p {
+  color: #FFFFFF;
+  max-width: 269px;
+  width: 100%;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
 }
 
 /*# sourceMappingURL=style.css.map */
