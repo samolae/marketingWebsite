@@ -697,4 +697,84 @@ footer .copy p {
   line-height: 16px;
 }
 
+.contact-form-section {
+  background-color: #EDEDED;
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  background-position-x: center;
+  background-image: url("../img/contact.png");
+  height: 833px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.contact-form-section .max-width {
+  margin-top: 84px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.contact-form-section .max-width h2 {
+  margin-top: 42px;
+  font-size: 52px;
+  font-weight: 700;
+  list-style: 64px;
+  max-width: 587px;
+  width: 100%;
+}
+.contact-form-section .max-width .contact-form {
+  width: 618px;
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0px 0px 2px 2px rgba(20, 33, 61, 0.1019607843);
+  border-radius: 20px;
+  backdrop-filter: blur(4px);
+  padding: 42px 32px;
+}
+.contact-form-section .max-width .contact-form .form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  gap: 20px;
+}
+.contact-form-section .max-width .contact-form .form div {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+  position: relative;
+}
+.contact-form-section .max-width .contact-form .form div label, .contact-form-section .max-width .contact-form .form div select {
+  font-size: 18px;
+  font-weight: 500;
+  color: #333333;
+  line-height: 22px;
+}
+.contact-form-section .max-width .contact-form .form div ion-icon {
+  position: absolute;
+  bottom: 15px;
+  font-size: 20px;
+  padding: 0 20px;
+  border-right: 1px solid #333333;
+}
+.contact-form-section .max-width .contact-form .form div input, .contact-form-section .max-width .contact-form .form div select {
+  padding: 16px 10px 16px 70px;
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+  border: 1px solid #CCCCCC;
+}
+.contact-form-section .max-width .contact-form .form div .input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contact-form-section .max-width .contact-form .form .button {
+  margin-top: 30px;
+}
+
 /*# sourceMappingURL=style.css.map */
