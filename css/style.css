@@ -119,6 +119,7 @@ body {
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
+  scroll-behavior: smooth;
 }
 
 .max-width {
@@ -339,6 +340,7 @@ p b {
   background-repeat: no-repeat;
   background-position-x: 130%;
   background-position-y: 80px;
+  position: relative;
 }
 .second-section div {
   max-width: 558px;
@@ -355,6 +357,19 @@ p b {
 }
 .second-section div button {
   margin-top: 20px;
+}
+
+.second-section::before {
+  content: " ";
+  display: block;
+  width: 163px;
+  height: 163px;
+  border-radius: 10px;
+  border: solid 11px #14213D;
+  background: rgba(255, 255, 255, 0);
+  position: absolute;
+  bottom: 20px;
+  right: -84px;
 }
 
 .third-section {

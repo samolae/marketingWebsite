@@ -4,6 +4,7 @@ body {
   background-color: $white;
   @include d-flex(flex, space-between, center);
   flex-direction: column;
+  scroll-behavior: smooth;
 }
 .max-width {
   max-width: 1280px;
@@ -194,6 +195,7 @@ p {
   background-repeat: no-repeat;
   background-position-x: 130%;
   background-position-y: 80px;
+  position: relative;
   div {
     max-width: 558px;
     width: 100%;
@@ -210,6 +212,18 @@ p {
       margin-top: 20px;
     }
   }
+}
+.second-section::before {
+  content: " ";
+  display: block;
+  width: 163px;
+  height: 163px;
+  border-radius: 10px;
+  border: solid 11px $dark;
+  background: #ffffff00;
+  position: absolute;
+  bottom: 20px;
+  right: -84px;
 }
 
 // third-section
