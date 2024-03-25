@@ -47,18 +47,18 @@
                 }
                 ion-icon {
                     position: absolute;
-                    bottom: 15px;
-                    font-size: 20px;
+                    bottom: 16px;
+                    font-size: 21px;
                     padding:0 20px;
                     border-right: 1px solid #333333;
                 }
                 input, select  {
                     padding: 16px 10px 16px 70px;
                     width: 100%;
-                    height: 50px;
                     border-radius: 10px;
                     border: 1px solid #CCCCCC
                 }
+
                 .input {
                     @include d-flex (flex, space-between, center);
                 }
